@@ -1,0 +1,16 @@
+unit unCAviao;
+
+interface
+
+uses
+  System.SysUtils, Grids, Printers, Graphics, StdCtrls, Forms, Windows, Dialogs, Data.Win.ADODB,
+  unCTransporte;
+
+type
+  cAviao = class(cTransporte)
+
+  end;
+
+implementation
+
+end.

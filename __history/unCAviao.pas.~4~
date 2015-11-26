@@ -1,0 +1,20 @@
+unit unCAviao;
+
+interface
+
+uses
+  System.SysUtils, Grids, Printers, Graphics, StdCtrls, Forms, Windows, Dialogs, Data.Win.ADODB,
+  unCTransporte;
+
+type
+  cAviao = class(cTransporte)
+
+  public
+    procedure move(v_sMetros: String) overload;
+
+
+  end;
+
+implementation
+
+end.

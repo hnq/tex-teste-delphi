@@ -1,0 +1,42 @@
+unit unCTransporte;
+
+interface
+
+uses
+  SysUtils, Grids, Printers, Graphics, StdCtrls, Forms, Windows, Dialogs, Data.Win.ADODB;
+
+type
+  cTransporte = Class
+
+  Private
+    p_sNome: String;
+
+  Public
+      constructor Create();
+      destructor Destroy();
+      property nome: String read p_sNome write p_sNome;
+      procedure move(v_iMetros);
+
+End;
+
+
+implementation
+
+{ cTransporte }
+
+constructor cTransporte.Create;
+begin
+
+end;
+
+destructor cTransporte.Destroy;
+begin
+
+end;
+
+procedure cTransporte.move(v_iMetros);
+begin
+  Application.MessageBox(p_sNome + ' moveu' + v_iMetros + ' m.', 'Atenção',MB_ICONINFORMATION );
+end;
+
+end.

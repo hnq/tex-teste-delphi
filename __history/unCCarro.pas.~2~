@@ -1,0 +1,14 @@
+unit unCCarro;
+
+interface
+
+uses
+  System.SysUtils, Grids, Printers, Graphics, StdCtrls, Forms, Windows, Dialogs, Data.Win.ADODB,
+  unCTransporte;
+
+type
+  cCarro = class(cTransporte)
+
+implementation
+
+end.
